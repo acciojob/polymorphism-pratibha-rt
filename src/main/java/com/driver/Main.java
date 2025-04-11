@@ -27,7 +27,7 @@ class Product {
     }
 
     public double product (double x, double y) {
-        System.out.println(" method overloading " + x + " " + y);
+        System.out.println(" function overloading " + x + " " + y);
         return x + y;
     }
 
