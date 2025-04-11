@@ -22,7 +22,7 @@ class Product {
     }
 
     public int product (int x, int y, int z) {
-        System.out.println(" method overloading " + x + " " + y + " " + z);
+        System.out.println(" function overloading " + x + " " + y + " " + z);
         return x + y + z;
     }
 
