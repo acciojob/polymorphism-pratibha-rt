@@ -2,6 +2,25 @@ package com.driver;
 
 public class Main {
 
+    static class Product extends Main {
+
+        public int product(int x, int y) {
+            System.out.println(" 1st method ");
+            return x + y;
+        }
+
+        public int product (int x, int y, int z) {
+            System.out.println(" function overloading " + x + " " + y + " " + z);
+            return x + y + z;
+        }
+
+        public double product (double x, double y) {
+            System.out.println(" function overloading : " + x + " " + y);
+            return x + y;
+        }
+
+    }
+
     public static void main(String[] args) {
 
         Product p = new Product();
@@ -14,21 +33,3 @@ public class Main {
 
 }
 
-class Product {
-
-    public int product(int x, int y) {
-        System.out.println(" 1st method ");
-        return x + y;
-    }
-
-    public int product (int x, int y, int z) {
-        System.out.println(" function overloading " + x + " " + y + " " + z);
-        return x + y + z;
-    }
-
-    public double product (double x, double y) {
-        System.out.println(" function overloading : " + x + " " + y);
-        return x + y;
-    }
-
-}
