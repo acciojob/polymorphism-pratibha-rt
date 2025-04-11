@@ -5,18 +5,15 @@ public class Main {
     static class Product extends Main {
 
         public int product(int x, int y) {
-            System.out.println(" 1st method ");
-            return x + y;
+            return x * y;
         }
 
         public int product (int x, int y, int z) {
-            System.out.println(" function overloading " + x + " " + y + " " + z);
-            return x + y + z;
+            return x * y * z;
         }
 
         public double product (double x, double y) {
-            System.out.println(" function overloading : " + x + " " + y);
-            return x + y;
+            return x * y;
         }
 
     }
@@ -25,9 +22,9 @@ public class Main {
 
         Product p = new Product();
 
-        p.product(2, 4);
-        p.product(4, 5, 7);
-        p.product(4.3314159, 5.7765675746);
+        System.out.println("Product of 2 and 3 (int): " + p.product(2, 3));
+        System.out.println("Product of 2, 3 and 4 (int): " + p.product(2, 3, 4));
+        System.out.println("Product of 2.5 and 3.5 (double): " + p.product(2.5, 3.5));
 
     }
 
