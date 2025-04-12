@@ -22,9 +22,9 @@ public class Main {
 
         Product p = new Product();
 
-        System.out.println("Product of 2 and 3 (int): " + p.product(2, 3));
-        System.out.println("Product of 2, 3 and 4 (int): " + p.product(2, 3, 4));
-        System.out.println("Product of 2.5 and 3.5 (double): " + p.product(2.5, 3.5));
+        System.out.println(p.product(2, 3));
+        System.out.println(p.product(2, 3, 4));
+        System.out.println(p.product(2.5, 3.5));
 
     }
 
